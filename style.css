@@ -176,6 +176,7 @@ input[type=password] {
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
+        width: 20%;
     }
     .sidenav a {
         font-size:11px;
