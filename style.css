@@ -1,0 +1,194 @@
+body,
+header {
+    font-family: "Times New Roman", Times, serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("background.jpg");
+}
+
+.main {
+    height: 50px;
+}
+.column {
+    float: left;
+    width: 50%;
+    height: 30px;
+    background-color: lightgray;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    margin: 4px 0;
+    text-align: center;
+    font-size: 12px;
+}
+.button {
+    display:inline-block;
+    font-size: 12px;
+    color:#1691EF;
+    margin-left: 3px;
+    margin-right: 4px;
+    font-weight: 600;
+}
+
+.content p {
+    display:inline-block;
+    font-size: 12px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+span {
+    font-size: 15px;
+    margin: 5px 0;
+    text-align: center;
+    color: navy;
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    opacity: 0.9;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    font-weight: 200;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+svg {
+    margin: 0 10px;
+    transform: rotate(-90deg);
+}
+
+.icon {
+    fill:white;
+}
+
+.hexagon {
+    position: relative;
+    width: 40px;
+    height: 23.09px;
+    background-color: #1691EF;
+    margin: 0 auto;
+    transform: rotate(90deg);
+}
+
+.hexagon:before,
+.hexagon:after {
+    float:left;
+    content: "";
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    left: 0;
+}
+
+.hexagon:before {
+    float:left;
+    bottom: 100%;
+    border-bottom: 11.55px solid #1691EF;
+}
+
+.hexagon:after {
+    float:left;
+    top: 100%;
+    border-top: 11.55px solid #1691EF;
+}
+
+a.forget{
+    text-decoration: underline;
+    float:right;
+}
+
+.container {
+    padding: 16px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 300px;
+    color: black;
+    height: 53px;
+    border:0;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 15px;
+}
+
+.submit1 {
+    text-align:center;
+    font-weight: 100;
+    background-color: #1691EF;
+    color: white;
+    font-size: 15px;
+    width: 300px;
+    height: 50px;
+    margin: 40px 15px;
+}
+
+.submit2 {
+    text-align:center;
+    font-weight: 100;
+    background-color: lightgrey;
+    color: black;
+    font-size: 15px;
+    width: 300px;
+    height: 50px;
+    margin: 1px 15px;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size:11px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
