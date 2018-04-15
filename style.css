@@ -1,4 +1,3 @@
-
 body,
 header {
     font-family: "Times New Roman", Times, serif;
@@ -12,12 +11,14 @@ header {
 .row {
     height: 50px;
 }
+
 .column1 {
     float: left;
     width: 30%;
     height: 30px;
     background-color: lightgray;
 }
+
 .column2 {
     float: left;
     width: 70%;
@@ -26,10 +27,11 @@ header {
 }
 
 .column2 p {
-    float:left;
+    float: left;
     margin: 8px 1px;
     font-size: 12px;
 }
+
 .row:after {
     content: "";
     display: table;
@@ -41,24 +43,27 @@ header {
     text-align: center;
     font-size: 12px;
 }
+
 .button {
-    display:inline-block;
+    display: inline-block;
     font-size: 12px;
-    color:#1691EF;
+    color: #1691EF;
     margin-left: 3px;
     margin-right: 4px;
     font-weight: 600;
+    cursor: pointer;
 }
+
 .button1 {
-    float:left;
+    float: left;
     font-size: 12px;
-    color:#1691EF;
+    color: #1691EF;
     margin: 8px 4px;
     font-weight: 600;
 }
 
 .content p {
-    display:inline-block;
+    display: inline-block;
     font-size: 12px;
     margin: 5px 0;
     text-align: center;
@@ -70,13 +75,6 @@ p {
     font-size: 15px;
 }
 
-span {
-    font-size: 15px;
-    margin: 5px 0;
-    text-align: center;
-    color: navy;
-    cursor: pointer;
-}
 
 .sidenav {
     height: 100%;
@@ -88,7 +86,7 @@ span {
     background-color: white;
     opacity: 0.9;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.1s;
     padding-top: 60px;
 }
 
@@ -116,7 +114,7 @@ svg {
 }
 
 .icon {
-    fill:white;
+    fill: white;
 }
 
 .hexagon {
@@ -130,7 +128,7 @@ svg {
 
 .hexagon:before,
 .hexagon:after {
-    float:left;
+    float: left;
     content: "";
     position: absolute;
     border-left: 20px solid transparent;
@@ -139,20 +137,20 @@ svg {
 }
 
 .hexagon:before {
-    float:left;
+    float: left;
     bottom: 100%;
     border-bottom: 11.55px solid #1691EF;
 }
 
 .hexagon:after {
-    float:left;
+    float: left;
     top: 100%;
     border-top: 11.55px solid #1691EF;
 }
 
-a.forget{
+a.forget {
     text-decoration: underline;
-    float:right;
+    float: right;
 }
 
 .container {
@@ -164,13 +162,13 @@ input[type=password] {
     width: 300px;
     color: black;
     height: 53px;
-    border:0;
+    border: 0;
     border-bottom: 1px solid lightgrey;
     margin-bottom: 15px;
 }
 
 .submit1 {
-    text-align:center;
+    text-align: center;
     font-weight: 100;
     background-color: #1691EF;
     color: white;
@@ -181,7 +179,7 @@ input[type=password] {
 }
 
 .submit2 {
-    text-align:center;
+    text-align: center;
     font-weight: 100;
     background-color: lightgrey;
     color: black;
@@ -192,26 +190,34 @@ input[type=password] {
 }
 
 
-@media screen and (max-height: 410px) {
+@media screen and (max-width: 440px) {
+    .column1 {
+        float: left;
+        width: 30%;
+        height: 30px;
+        background-color: lightgray;
+    }
+    .column2 {
+        float: left;
+        width: 70%;
+        height: 30px;
+        background-color: lightgray;
+    }
+
     .sidenav {
         padding-top: 15px;
-        width: 450px;
     }
     .sidenav a {
-        font-size:11px;
-    }
-    
-    p {
-        text-align:center;
+        font-size: 11px;
     }
     .submit1,
-    .submit2{
-        width: 150px;
+    .submit2 {
+        width: 10%;
         margin-left: 130px;
         height: 50px;
     }
-    
+
     input[type=text],
     input[type=password] {
-    width: 400px
-}
+        width: 400px
+    }
