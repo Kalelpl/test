@@ -2,10 +2,12 @@
 
     body {
         background-image: url("background.jpg");
-        background-repeat: no-repeat;
+        background-repeat: repeat-x;
         background-position: center center;
         background-attachment: fixed;
     }
+    
+    p {margin : -10px -10px};
 
     .row {
         height: 70px;
@@ -23,7 +25,7 @@
         height: 100%;
         background-color: lightgray;
     }
-
+    
     .sidenav {
         padding-top: 15px;
     }
@@ -46,7 +48,7 @@
         float: left;
         font-size: 13px;
         color: #1691EF;
-        margin: -5px 0px;
+        margin: -25px 20px;
         font-weight: 600;
     }
 
